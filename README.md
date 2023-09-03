@@ -4,6 +4,8 @@
 - implement a simplistic vector database that can store, search and retrieve vectors
 
 ## Implementation
-1. The database should be able to accept a vector and index it upon storing it.
-2. THe database should be able to search for and retrieve n similar vectors.
+1. Naive Implementation
+    - Every vector is compared to all the stored vectors to find the most similar one (KNN)
+        - Vectors are stored in in-memory (data structure is a dictionary)
+    - Brufe force search is utilized to search all vectors in the database
 
